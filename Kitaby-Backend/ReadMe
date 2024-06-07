@@ -1,0 +1,51 @@
+http://localhost:3000/api/
+
+/home
+  /getAllBooks (query contains the page )
+  /getCollection/:id
+
+  /getBooks () (recherche)
+    (the query can have name,author,wilaya,category)
+    //https://example.com/api/books?page=2&name=harry
+  /getRecommendations
+    {
+      req.auth.userId
+    }  
+  /addRating 
+  req.body{
+      isbn:number,
+      rating: float number,
+      comment:string
+    }  
+  /getBookInfo
+  req.body{
+    isbn
+  } 
+
+
+/offers
+  /getReceivedOffers/:id => //this one return a list of offers and a list of books ,so u can get the book informations from that list with the isbn that u get from the offer 
+  /getSentOffers/:id
+  /postOffer ("id","bookOwner","demandedBook","proposedBooks")
+  /acceptOffer (acceptedBookIsbn, offerId,userId)
+
+
+/reservation
+  http://localhost:3000/api/home/getLibsBooks (return the avalaibleBooks in all bibs)
+    
+  http://localhost:3000/api/profile/getReservations/:userId (return the reservations that the user)
+
+  http://localhost:3000/api/bib/requestBook (post)(userId, bibId, bookIsbn)
+
+
+/chat
+  / =>createchat (firstID,secondId) (post)
+  /:userId =>findUserChats?name (get)
+  /find/:firstId/:secondId =>findChat (get)
+
+
+
+/message
+  / => createMessage (chatId,senderId,text) (post)
+  /:chatId/:userId =>getMessages (get)
+

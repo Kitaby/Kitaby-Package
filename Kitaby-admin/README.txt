@@ -1,0 +1,1 @@
+Before launching the two servers, make sure to install the node modules by typing "npm i" in both the frontend and backend, and dont forget to change the environment variables.

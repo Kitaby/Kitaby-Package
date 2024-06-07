@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "69417256210",
+    "project_id": "kitaby-bedfa",
+    "storage_bucket": "kitaby-bedfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69417256210:android:020167a6023aa1019e5fcb",
+        "android_client_info": {
+          "package_name": "com.example.kitaby"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrvciJ5zSo9_Cv56vX1OTxhUwL-QZYaSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
